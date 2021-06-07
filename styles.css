@@ -90,3 +90,57 @@ ID: 854781332
     .nav-links a.active:hover, .nav-links a.active:focus {
         color: #30b9d9;
     }
+
+    /* This section styles the hero image and call to action */
+
+    .call-to-action {
+        position: relative;
+    }
+
+    .hero {
+        filter: brightness(75%);
+        width: 90%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-text {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 2;
+        color: white;
+        backdrop-filter: blur(0.8rem);
+        border-radius: 3rem;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        height: 14rem;
+        width: 38rem;
+        top: 50%;
+        left: 50%;
+        margin-left: -20rem;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        width: 80%;
+    }
+
+    .reg-btn {
+        background-color: #30b9d9;
+        border-radius: 3rem;
+        margin-bottom: 0.8rem;
+        transition: .5s ease;
+        padding: 0.1rem;
+
+    }
+
+    .reg-btn:hover {
+        background-color: white;
+
+    }
