@@ -1,0 +1,92 @@
+/* 
+SE350 A2: css styles for BPD
+Author: Joel Hutchinson
+ID: 854781332
+*/
+
+/* The following lines remove default stylings */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    body {
+        height: 100%;
+    }
+
+/* Here is the css selector code for the assigned colour  */
+    
+    /* This is my assigned colour  */
+    .custom-background-color {
+        background-color: #d95030;
+    }
+    /* This is the complement to my assigned colour  */
+    .custom-color:hover {
+        color: #30b9d9;
+    }
+    .custom-color {
+        color: white;
+    }
+
+/* This code onwards is applied styling */
+
+    /* This section styles the navigation bar */
+
+    nav {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    }
+
+    .nav-links ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nav-links li {
+        margin: 0px 0.2rem 0px 0.2rem;
+        transition: .5s ease;
+
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 1rem;
+        border-radius: 1.0rem;
+
+    }
+
+    .nav-links a.active {
+        color: white;
+        background-color: #d94230;
+        font-weight: bold;
+        border-radius: 2.2rem;
+
+    }
+
+    .nav-links li:hover, .nav-links li:hover {
+        background-color: #d96c30;
+        border-radius: 1.8rem;
+    }
+
+    .nav-links a:hover, .nav-links a:focus {
+        color: #30b9d9;
+    }
+
+    .nav-links a.active:hover, .nav-links a.active:focus {
+        color: #30b9d9;
+    }
