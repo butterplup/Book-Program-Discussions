@@ -186,3 +186,127 @@ ID: 854781332
         background-color: #d96c30;
         border-radius: 2.5rem;
     }
+
+    /* This section styles the registration modal window */
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.3);
+    }
+
+    .modal-header, .modal-footer {
+        padding: 0.125rem 1rem;
+        background-color: #d95030;
+        color: white;
+    }
+
+    .modal-header {
+        border-radius: 1.5rem 1.5rem 0rem 0rem;
+        font-size: 2rem;
+    }
+
+    .modal-footer {
+        border-radius: 0rem 0rem 1.5rem 1.5rem;
+        padding-bottom: 0.25rem;
+        font-size: 1.25rem;
+    }
+
+    .modal-content {
+        background-color: #f9f9f9;
+        border-radius: 1.5rem;
+        margin: 5% auto;
+        padding: 1rem;
+        border: 1px solid #888;
+        width: 70%;
+        animation-name: animated-open;
+        animation-duration: .5s;
+    }
+
+    @keyframes animated-open {
+        from {opacity: 0}
+        to {opacity: 1}
+      }
+
+    .modal-body {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        padding: 1rem;
+
+    }
+
+    .form-body {
+        width: 25%;
+    }
+
+    .rego-img {
+        border-radius: 3rem;
+    }
+
+    .form-div {
+        padding: 0.5rem;
+    }
+
+    h3 {
+        color: #30b9d9;
+    }
+
+    input {
+        border: 0.125rem solid #30b9d9;
+        border-radius: 0.5rem;
+        width: 100%;
+    }
+
+    input:focus {
+        border: 0.125rem solid #d95030; 
+        border-radius: 0.5rem;
+
+    }
+
+    button {
+        text-decoration: none;
+        border: none;
+        color: white;
+        background-color:rgba(255, 255, 255, 0);
+        font-size: 1rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        transition: .5s ease;
+    }
+
+    button:hover {
+        color: #30b9d9;
+        background-color:rgba(0, 0, 0, 0);
+    }
+
+    button:focus {
+        color: lightgray;
+    }
+
+    button:active {
+        color:lightgray;
+        transform: scale(0.95);
+    }
+
+    .close-btn {
+        color: white;
+        float: right;
+        font-size: 2rem;
+        font-weight: bold;
+        transition: .5s ease;
+    }
+
+    .close-btn:hover, .close-btn:focus {
+        color: lightgray;
+        text-decoration: none;
+        cursor: pointer;
+    }
+

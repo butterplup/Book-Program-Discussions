@@ -14,6 +14,23 @@
         <!-- Author: Joel Hutchinson, ID: 854781332 -->
         <!-- Originally written for SE350 A2 -->
 
+        <script>
+            // When user clicks "Register" open up sign-up window
+            function openWindow() {
+                document.getElementById("regoWindow").style.display = "block";
+            }
+            // Clicking on either the "x" or outside of the window closes the modal window
+            function closeWindow() {
+                document.getElementById("regoWindow").style.display = "none";
+            }
+            window.onclick = function(event) {
+                if (event.target == document.getElementById("regoWindow")) {
+                    document.getElementById("regoWindow").style.display = "none";
+                }
+            }
+
+        </script>
+
     </head>
 
     <body>
@@ -86,5 +103,49 @@
                     </div>
                 </div>
             </section>
+            <div id="regoWindow" class="modal">
+                <div class="modal-content">
+                    <div class="custom-background-color, custom-color, modal-header">
+                        <span class="close-btn" onclick="closeWindow()">&times;</span>
+                        <h2>Registration Form</h2>
+                    </div>
+                    <div class="modal-body">
+                        <div id=”bookclubrego” class="form-body">
+                            <form>
+                                <div id=”userDetails” class="form-div">
+                                    <h3>User Details:</h3>
+                                    <label for="fname">Given name:</label><br>
+                                    <input type="text" id="fname" name="fname"><br>
+                                    <label for="lname">Surname:</label><br>
+                                    <input type="text" id="lname" name="lname"><br>
+                                    <label for="username">Username:</label><br>
+                                    <input type="text" id="username" name="username"><br>
+                                    <label for="password">Password:</label><br>
+                                    <input type="password" id="password" name="password"><br>
+                                </div>
+                                <div id="addresses" class="form-div">
+                                    <h3>Addresses:</h3>
+                                    <label for="homeaddy">Home Address:</label><br>
+                                    <input type="text" id="homeaddy" name="homeaddy"><br>
+                                    <label for="workaddy">Work Address:</label><br>
+                                    <input type="text" id="workaddy" name="workaddy"><br>
+                                </div>
+                                <div id="contacts" class="form-div">
+                                    <h3>Contacts:</h3>
+                                    <label for="mobilenum">Mobile Number:</label><br>
+                                    <input type="text" id="mobilenum" name="mobilenum"><br>
+                                    <label for="email">Email:</label><br>
+                                    <input type="text" id="email" name="email"><br>
+                                </div>
+                            </form>
+                        </div>
+                        <img class="rego-img" src="/filling-registration.jpeg" alt="person filling out registration" style="width: 70%;">
+                    </div>
+                    <div class="modal-footer">
+                        <h4>&nbsp Thank you!</h4>
+                    </div>
+                </div>
+              
+              </div>
         </div>
     </body>
