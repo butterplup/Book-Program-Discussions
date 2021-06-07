@@ -144,3 +144,45 @@ ID: 854781332
         background-color: white;
 
     }
+
+    /* This section styles the extra news section below */
+
+    .page-section-2 {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        background-color: #30b9d9;
+    }
+
+    .news-block {
+        width: 80%;
+        transform: translate(0rem, -7rem);
+    }
+
+    #news-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #f9f9f9;
+        height: 40rem;
+        padding: 2rem;
+        padding-right: 4rem;
+        border-radius: 1.5rem;
+    }
+
+    .news-item .read-more {
+        transition: .5s ease;
+        width: fit-content;
+    }
+    .news-item .read-more:hover {
+        color: lightgray;
+    }
+
+    .news-item {
+        padding: 1rem;
+        transition: .5s ease;
+    }
+    .news-item:hover {
+        background-color: #d96c30;
+        border-radius: 2.5rem;
+    }
